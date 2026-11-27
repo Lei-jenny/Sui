@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="424" height="286" viewBox="0 0 424 286" fill="none">
+  <defs>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" stroke="#718379" stroke-opacity=".16"/>
+    </pattern>
+    <radialGradient id="halo">
+      <stop stop-color="#72927d" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#72927d" stop-opacity="0"/>
+    </radialGradient>
+    <g id="tick"><path d="M212 28v8M212 250v8" stroke="#aabbab" stroke-opacity=".54"/></g>
+  </defs>
+  <rect x="1" y="1" width="422" height="284" fill="url(#grid)" stroke="#718379" stroke-opacity=".38"/>
+  <ellipse cx="212" cy="143" rx="157" ry="138" fill="url(#halo)"/>
+  <path d="M212 1v284M1 143h422M39 245 385 41M39 41l346 204" stroke="#718379" stroke-opacity=".4" stroke-dasharray="3 6"/>
+  <g stroke="#98b29e">
+    <circle cx="212" cy="143" r="115" stroke-opacity=".32"/>
+    <circle cx="212" cy="143" r="100" stroke-opacity=".52"/>
+    <circle cx="212" cy="143" r="86" stroke-opacity=".22" stroke-dasharray="2 5"/>
+    <ellipse cx="212" cy="143" rx="157" ry="55" transform="rotate(-27 212 143)" stroke-opacity=".44"/>
+    <ellipse cx="212" cy="143" rx="157" ry="55" transform="rotate(27 212 143)" stroke-opacity=".25"/>
+  </g>
+  <use href="#tick"/>
+  <use href="#tick" transform="rotate(30 212 143)"/>
+  <use href="#tick" transform="rotate(60 212 143)"/>
+  <use href="#tick" transform="rotate(90 212 143)"/>
+  <use href="#tick" transform="rotate(120 212 143)"/>
+  <use href="#tick" transform="rotate(150 212 143)"/>
+  <circle cx="301" cy="98" r="4" fill="#bf6859"/>
+  <circle cx="160" cy="229" r="4" fill="#a5bba7"/>
+  <circle cx="142" cy="72" r="3" fill="#a5bba7"/>
+  <path d="M1 20V1h19m384 0h19v19m0 246v19h-19m-384 0H1v-19" stroke="#aabbab" stroke-opacity=".75"/>
+</svg>

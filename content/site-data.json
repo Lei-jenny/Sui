@@ -1,0 +1,693 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-08",
+  "language": "zh-CN",
+  "title": "明日方舟「岁家」剧情全整理",
+  "canonicalDocument": "01-story-overview.md",
+  "documents": [
+    {
+      "id": "sui-dossier",
+      "title": "明日方舟「岁家」剧情全整理",
+      "path": "01-story-overview.md",
+      "role": "canonical-overview"
+    },
+    {
+      "id": "sui-prequel-guide",
+      "title": "岁家前文逐节点剧情指南",
+      "path": "02-chapter-guide.md",
+      "role": "chapter-guide",
+      "coversWorkIds": ["honglu", "who-is-real", "invitation-to-wine", "where-vernal-winds", "here-a-people-sows", "delicious-on-terra"]
+    },
+    {
+      "id": "zuo-le-story-bible",
+      "title": "左乐人物线与后续故事创作圣经",
+      "path": "03-zuo-le-story-bible.md",
+      "role": "character-and-writing-bible",
+      "characterId": "zuo-le"
+    }
+  ],
+  "scope": {
+    "server": "明日方舟国服",
+    "cutoffDate": "2026-10-08",
+    "canonRule": "游戏剧情正文优先，PRTS Wiki用于检索与核对",
+    "excluded": [
+      "未被剧情支持的玩家推测",
+      "仅因发生在炎国而与岁家无直接关联的故事",
+      "把集成战略所有互斥结局同时视作主世界史实"
+    ]
+  },
+  "evidenceLevels": [
+    {
+      "id": "text",
+      "label": "原文",
+      "description": "剧情正文、档案或官方叙事直接明示"
+    },
+    {
+      "id": "retcon-confirmed",
+      "label": "后作回认",
+      "description": "后续作品明确确认早期未具名伏笔"
+    },
+    {
+      "id": "inference",
+      "label": "推断",
+      "description": "多处文本共同支持，但官方未直接定论"
+    },
+    {
+      "id": "unresolved",
+      "label": "未定",
+      "description": "正文有意保留或证据不足"
+    }
+  ],
+  "characters": [
+    {
+      "id": "chongyue",
+      "name": "重岳",
+      "aliases": ["朔", "大哥", "长兄"],
+      "order": 1,
+      "domain": ["武", "自我重建"],
+      "playable": true,
+      "statusAfterFinale": "离开岁陵，寻找望留在陵外的一步闲棋",
+      "focus": true
+    },
+    {
+      "id": "wang",
+      "name": "望",
+      "aliases": ["二哥", "黑酒盏棋手", "新岁"],
+      "order": 2,
+      "domain": ["棋", "谋算", "可能性"],
+      "playable": true,
+      "statusAfterFinale": "杀死旧岁神识并继承岁躯，封存不反与源石风险后沉睡",
+      "focus": true
+    },
+    {
+      "id": "ling",
+      "name": "令",
+      "aliases": ["大姐"],
+      "order": 3,
+      "domain": ["诗", "梦", "逍遥"],
+      "playable": true,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "jun",
+      "name": "均",
+      "aliases": ["二姐"],
+      "order": 4,
+      "domain": ["律", "裁断", "规则"],
+      "playable": false,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "jie",
+      "name": "颉",
+      "aliases": ["岁五"],
+      "order": 5,
+      "domain": ["文字", "历史", "记忆"],
+      "playable": false,
+      "statusAfterFinale": "留有一缕生机或痕迹，完整人格及复生状态未定"
+    },
+    {
+      "id": "shu",
+      "name": "黍",
+      "aliases": [],
+      "order": 6,
+      "domain": ["土地", "农事", "四时"],
+      "playable": true,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "ji",
+      "name": "绩",
+      "aliases": ["三哥"],
+      "order": 7,
+      "domain": ["商贸", "资源", "契约"],
+      "playable": false,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "yi",
+      "name": "易",
+      "aliases": [],
+      "order": 8,
+      "domain": ["营造", "界园", "收藏"],
+      "playable": false,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "nian",
+      "name": "年",
+      "aliases": ["老九"],
+      "order": 9,
+      "domain": ["锻造", "造物"],
+      "playable": true,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "fang",
+      "name": "方",
+      "aliases": ["老十"],
+      "order": 10,
+      "domain": ["医治"],
+      "playable": false,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "dusk",
+      "name": "夕",
+      "aliases": ["幺妹"],
+      "order": 11,
+      "domain": ["绘画", "画境"],
+      "playable": true,
+      "statusAfterFinale": "存活"
+    },
+    {
+      "id": "yu",
+      "name": "余",
+      "aliases": ["幺弟"],
+      "order": 12,
+      "domain": ["饮食", "灶火", "人间烟火"],
+      "playable": true,
+      "statusAfterFinale": "存活"
+    }
+  ],
+  "works": [
+    {
+      "id": "honglu",
+      "title": "洪炉示岁",
+      "type": "故事集",
+      "releaseOrder": 1,
+      "role": "core",
+      "summary": "年用贺岁片隐晦表达本体、手足和自身来历，投下岁家谜面。",
+      "characters": ["nian"],
+      "revelations": ["年并非普通人", "存在更庞大的本体与分散的手足"],
+      "sourceIds": ["src-honglu"]
+    },
+    {
+      "id": "who-is-real",
+      "title": "画中人",
+      "type": "SideStory",
+      "releaseOrder": 2,
+      "role": "core",
+      "summary": "年找到躲入画境的夕，明确岁苏醒可能使十二人的独立人格消失。",
+      "characters": ["nian", "dusk"],
+      "revelations": ["十二人面对共同存续危机", "岁家内部立场不同"],
+      "sourceIds": ["src-who-is-real"]
+    },
+    {
+      "id": "invitation-to-wine",
+      "title": "将进酒",
+      "type": "SideStory",
+      "releaseOrder": 3,
+      "role": "core",
+      "summary": "黑酒盏中的二哥落下一百八十一枚黑子，岁相出现，太傅以白棋回应。",
+      "characters": ["nian", "dusk", "ling", "wang"],
+      "identityNotes": [
+        {
+          "claim": "二哥和黑酒盏棋手为望",
+          "evidence": "retcon-confirmed"
+        }
+      ],
+      "sourceIds": ["src-invitation-to-wine"]
+    },
+    {
+      "id": "where-vernal-winds",
+      "title": "登临意",
+      "type": "SideStory",
+      "releaseOrder": 4,
+      "role": "core",
+      "summary": "重岳以人的武守住玉门，处理与朔之旧我的关系，并结束百年任期。",
+      "characters": ["chongyue", "ling", "wang"],
+      "revelations": ["重岳就是岁家长兄朔", "重岳主动割舍旧日巨兽权能"],
+      "sourceIds": ["src-where-vernal-winds"]
+    },
+    {
+      "id": "here-a-people-sows",
+      "title": "怀黍离",
+      "type": "SideStory",
+      "releaseOrder": 5,
+      "role": "core",
+      "summary": "黍与大荒众人守住土地，证明代理人的力量可扎根于人间实践。",
+      "characters": ["shu", "wang", "ji", "nian", "dusk"],
+      "sourceIds": ["src-here-a-people-sows"]
+    },
+    {
+      "id": "delicious-on-terra",
+      "title": "相见欢",
+      "type": "SideStory",
+      "releaseOrder": 6,
+      "role": "core",
+      "summary": "余将力量交给百灶烟火，真龙开启岁陵，望拒绝绩同行并独自入陵。",
+      "characters": ["yu", "wang", "ji"],
+      "sourceIds": ["src-delicious-on-terra"]
+    },
+    {
+      "id": "garden-of-grotesqueries",
+      "title": "岁的界园志异",
+      "type": "集成战略",
+      "releaseOrder": 7,
+      "role": "core-context",
+      "summary": "通过现实界园、岁兽残识与五种互斥结局，展示望终局计划的可能性模型。",
+      "characters": ["chongyue", "wang", "ling", "jun", "jie", "shu", "ji", "yi", "nian", "fang", "dusk", "yu"],
+      "canonWarning": "人物信息和机制解释可采信；具体胜负、死亡、复活与改写历史结果不可全部写入主世界年表。",
+      "endings": ["依律镇抚", "长卷留痕", "黑白入玄", "无中生有", "落子无悔"],
+      "sourceIds": ["src-garden", "src-garden-gallery"]
+    },
+    {
+      "id": "a-new-year",
+      "title": "辞岁行",
+      "type": "SideStory",
+      "releaseOrder": 8,
+      "role": "core-finale",
+      "summary": "颉与望的旧史被揭开；重岳打开一瞬，望杀死旧岁神识并成为新岁。",
+      "characters": ["chongyue", "wang", "ling", "jun", "jie", "shu", "ji", "yi", "nian", "fang", "dusk", "yu"],
+      "sourceIds": ["src-a-new-year", "src-ta10", "src-ta11", "src-ta-st2"]
+    },
+    {
+      "id": "a-collection-of-reflections",
+      "title": "镜中集",
+      "type": "故事集",
+      "releaseOrder": 9,
+      "role": "supplementary",
+      "summary": "以炎国异闻补充岁家、玉门旧人及望留下的棋局。",
+      "sourceIds": ["src-reflections"]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "ancient-sui-defeat",
+      "period": "上古至大炎早期",
+      "sortKey": 100,
+      "title": "岁被击败",
+      "summary": "岁被大炎击败，躯体埋入岁陵；十二意识逐渐分化并在人间活动。",
+      "evidence": "text",
+      "characters": []
+    },
+    {
+      "id": "agents-become-people",
+      "period": "千年间",
+      "sortKey": 200,
+      "title": "十二人各自成为人",
+      "summary": "十二人分别进入武、诗、律、史、农、商、工、铸、医、画、食等道路，形成独立人格。",
+      "evidence": "text",
+      "characters": ["chongyue", "wang", "ling", "jun", "jie", "shu", "ji", "yi", "nian", "fang", "dusk", "yu"]
+    },
+    {
+      "id": "jie-writes-history",
+      "period": "593年前后",
+      "sortKey": 593,
+      "title": "颉参与修史",
+      "summary": "颉坚持保留真实伤亡，书刀成为修正错误与保存记忆的象征。",
+      "evidence": "text",
+      "characters": ["jie"],
+      "workId": "a-new-year"
+    },
+    {
+      "id": "wang-enters-remnant",
+      "period": "759年",
+      "sortKey": 759,
+      "title": "望第一次进入岁兽残识",
+      "summary": "望私放矩兽，借令之梦进入岁兽残识，主动试探岁。",
+      "evidence": "text",
+      "characters": ["wang", "ling"],
+      "workId": "a-new-year"
+    },
+    {
+      "id": "wang-proposes-replacement",
+      "period": "962年前后",
+      "sortKey": 962,
+      "title": "望提出取岁而代之",
+      "summary": "望向真龙提出杀死岁之神识、由自己继承躯体的方案。",
+      "evidence": "text",
+      "characters": ["wang"],
+      "workId": "a-new-year"
+    },
+    {
+      "id": "jie-and-chun",
+      "period": "965年前后",
+      "sortKey": 965,
+      "title": "颉与椿共事",
+      "summary": "颉继续修史，司岁台对其不断增长的文字权能日益警惕。",
+      "evidence": "text",
+      "characters": ["jie"],
+      "workId": "a-new-year"
+    },
+    {
+      "id": "jie-sacrifice",
+      "period": "982年",
+      "sortKey": 982,
+      "title": "颉代望入陵",
+      "summary": "岁制造白望，椿推动替代方案；颉抹去望的名字并代其承受岁的攻击。",
+      "evidence": "text",
+      "characters": ["wang", "jie", "jun"],
+      "workId": "a-new-year"
+    },
+    {
+      "id": "wang-long-plan",
+      "period": "982年后",
+      "sortKey": 1000,
+      "title": "望布置百年终局",
+      "summary": "望拆分力量、落下一百八十一枚黑子，并研究残识与人间锚点。",
+      "evidence": "retcon-confirmed",
+      "characters": ["wang"]
+    },
+    {
+      "id": "nian-arrives-rhodes",
+      "period": "洪炉示岁",
+      "sortKey": 1100,
+      "title": "年在罗德岛拍摄贺岁片",
+      "summary": "年以电影隐晦表达岁与手足问题。",
+      "evidence": "text",
+      "characters": ["nian"],
+      "workId": "honglu"
+    },
+    {
+      "id": "nian-finds-dusk",
+      "period": "画中人",
+      "sortKey": 1200,
+      "title": "年找到夕",
+      "summary": "岁复苏带来的存续危机被明确，夕离开画境。",
+      "evidence": "text",
+      "characters": ["nian", "dusk"],
+      "workId": "who-is-real"
+    },
+    {
+      "id": "black-white-game",
+      "period": "将进酒",
+      "sortKey": 1300,
+      "title": "黑白棋局展开",
+      "summary": "二哥的黑子引出岁相，令将其击散，太傅落下白子。",
+      "evidence": "retcon-confirmed",
+      "characters": ["wang", "ling", "nian", "dusk"],
+      "workId": "invitation-to-wine"
+    },
+    {
+      "id": "chongyue-leaves-yumen",
+      "period": "登临意",
+      "sortKey": 1400,
+      "title": "重岳结束玉门任期",
+      "summary": "重岳以人的武击败睚、封存古剑，并前往罗德岛。",
+      "evidence": "text",
+      "characters": ["chongyue"],
+      "workId": "where-vernal-winds"
+    },
+    {
+      "id": "shu-roots-in-land",
+      "period": "怀黍离",
+      "sortKey": 1500,
+      "title": "黍把力量扎入土地",
+      "summary": "黍与大荒众人保住土地，证明权能可以进入人间实践。",
+      "evidence": "retcon-confirmed",
+      "characters": ["shu", "wang", "ji"],
+      "workId": "here-a-people-sows"
+    },
+    {
+      "id": "wang-enters-tomb",
+      "period": "相见欢",
+      "sortKey": 1600,
+      "title": "望独自进入岁陵",
+      "summary": "余将力量交给百灶烟火，真龙开启岁陵，望拒绝绩同行。",
+      "evidence": "text",
+      "characters": ["yu", "wang", "ji"],
+      "workId": "delicious-on-terra"
+    },
+    {
+      "id": "old-sui-dies",
+      "period": "1102年",
+      "sortKey": 1700,
+      "title": "旧岁神识死亡，望成为新岁",
+      "summary": "重岳打开一瞬，望杀死旧岁神识并继承躯体，随后封存不反及源石风险。",
+      "evidence": "text",
+      "characters": ["chongyue", "wang"],
+      "workId": "a-new-year"
+    },
+    {
+      "id": "history-continues",
+      "period": "1102年初冬",
+      "sortKey": 1800,
+      "title": "史不失书",
+      "summary": "陈昭芊继续修史，重岳寻找望的闲棋；颉与尾声少年的身份状态仍未确定。",
+      "evidence": "text",
+      "characters": ["chongyue", "wang", "jie"],
+      "workId": "a-new-year"
+    }
+  ],
+  "supportingCharacters": [
+    {
+      "id": "zuo-le",
+      "name": "左乐",
+      "faction": "炎／司岁台",
+      "role": "秉烛人、罗德岛合作干员",
+      "currentStatus": "《辞岁行》结局后仍为秉烛人；未升任监正，也未离开司岁台",
+      "arcSummary": "从依靠命令和危险分类办案，成长为能核验制度、判断具体的人、阻止错误命令并承担后果的制度内纠偏者。",
+      "arcStages": [
+        {
+          "workId": "invitation-to-wine",
+          "label": "职责先于理解",
+          "summary": "发现真命不代表每一步天然正确，开始接受外部合作者与制度追责。"
+        },
+        {
+          "workId": "where-vernal-winds",
+          "label": "承担个人判断",
+          "summary": "相信截云、允许其携剑离城并亲自承担放人的风险。"
+        },
+        {
+          "workId": "here-a-people-sows",
+          "label": "苍生不是虚词",
+          "summary": "从个人赴险转向组织救援，承认代理人人性但不免除具体责任。"
+        },
+        {
+          "workId": "delicious-on-terra",
+          "label": "系统风险判断",
+          "summary": "调查失真档案并评估五头巨兽异动，不再以未知本身支持立即开战。"
+        },
+        {
+          "workId": "a-new-year",
+          "label": "制度内抗命与纠偏",
+          "summary": "以证据、合作者和责任链阻止太尉乱命，并说服左宣辽让玉门停驶。"
+        }
+      ],
+      "relationships": [
+        {"target": "左宣辽", "type": "父子、军政责任与尚未完成的对话"},
+        {"target": "太傅", "type": "可信上级，但不再是停止思考的理由"},
+        {"target": "监正椿", "type": "司岁台历史责任与辞职后的权威真空"},
+        {"target": "太尉", "type": "国家安全逻辑的极端考题"},
+        {"target": "莫佚", "type": "从身份怀疑走向基于行动的有限信任"},
+        {"target": "岁家", "type": "监管对象、合作者与应被承认为人的独立主体"}
+      ],
+      "canonWarnings": [
+        "左乐母亲的姓名和职业未明，不能确认她是景教授",
+        "没有证据表明左乐已被指定为监正继承人",
+        "左乐没有背叛或离开司岁台",
+        "《登临意》中左乐放走的是截云，不是仇白"
+      ],
+      "documentId": "zuo-le-story-bible"
+    }
+  ],
+  "writingHooks": [
+    {
+      "id": "rebuild-sui-regulator",
+      "title": "司岁台重整与失真的档案",
+      "confidence": "high",
+      "premise": "椿辞职后，各派争夺档案、外勤和巨兽处置权，左乐参与旧案复核。",
+      "centralChoice": "如何建立可纠错的证据制度，并让组织承认过去的责任。"
+    },
+    {
+      "id": "five-feranmut-investigation",
+      "title": "五巨兽异动的跨境调查",
+      "confidence": "high",
+      "premise": "承接《相见欢》中大炎外五头巨兽的苏醒征兆，组织司岁台、罗德岛与地方联合调查。",
+      "centralChoice": "证明先理解不是软弱，同时承认理解后仍可能必须战斗。"
+    },
+    {
+      "id": "jie-token-and-mo-yi",
+      "title": "颉的信物与莫佚的任务",
+      "confidence": "high",
+      "premise": "信物指向被抹去的史料，左乐与莫佚在互不完全信任中合作。",
+      "centralChoice": "是否允许未经国家批准的历史重回现实，又如何避免把颉的痕迹误作完整复活。"
+    },
+    {
+      "id": "yumen-accountability",
+      "title": "玉门抗命后的父子与军政责任",
+      "confidence": "medium",
+      "premise": "朝廷调查玉门停驶，左宣辽与普通军士面临不同层级的问责。",
+      "centralChoice": "让责任落在真正决策者身上，而不是用父子情或国家名义转嫁。"
+    },
+    {
+      "id": "sui-agent-legal-status",
+      "title": "代理人的新制度身份",
+      "confidence": "medium",
+      "premise": "旧岁神识死亡后，大炎必须重新定义岁家是公民、盟友、监管对象还是独立主体。",
+      "centralChoice": "把人格承认转成可执行规则，同时保留对真实风险的约束。"
+    },
+    {
+      "id": "zuo-le-becomes-supervisor",
+      "title": "左乐继任监正",
+      "confidence": "low",
+      "premise": "只适合作为远期终点，现阶段没有正式任命或继承安排。",
+      "centralChoice": "是否接受最高职位，以及如何避免重演椿的问题。"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "chongyue-wang",
+      "source": "chongyue",
+      "target": "wang",
+      "type": "siblings-conflict",
+      "label": "共同救家人；公开共担与秘密独担的冲突"
+    },
+    {
+      "id": "wang-jie",
+      "source": "wang",
+      "target": "jie",
+      "type": "intellectual-bond",
+      "label": "谋算与历史两条理解人心的道路；982年牺牲构成望的核心创伤"
+    },
+    {
+      "id": "wang-jun",
+      "source": "wang",
+      "target": "jun",
+      "type": "trusted-accountability",
+      "label": "均保存书刀、参与可能性布局，也代表规则与问责"
+    },
+    {
+      "id": "wang-ling",
+      "source": "wang",
+      "target": "ling",
+      "type": "dream-alliance",
+      "label": "令以梦帮助望进入残识，看穿布局却保留自由选择"
+    },
+    {
+      "id": "wang-ji",
+      "source": "wang",
+      "target": "ji",
+      "type": "protective-distance",
+      "label": "绩负责现实资源并愿同行；望拒绝让他成为第二个颉"
+    },
+    {
+      "id": "nian-dusk",
+      "source": "nian",
+      "target": "dusk",
+      "type": "siblings-growth",
+      "label": "年推动反抗，夕从封闭和宿命中逐渐走向人间"
+    }
+  ],
+  "openQuestions": [
+    {
+      "id": "wang-awakening",
+      "question": "望成为新岁后，能否以完整人格再次醒来？",
+      "status": "unresolved"
+    },
+    {
+      "id": "spare-move",
+      "question": "岁陵外的一步闲棋具体是什么，尾声少年与望有何关系？",
+      "status": "unresolved"
+    },
+    {
+      "id": "jie-return",
+      "question": "颉的一缕生机是否包含完整人格，她是否可能真正复生？",
+      "status": "unresolved"
+    },
+    {
+      "id": "source-stone-risk",
+      "question": "不反与最初源石被封入新岁后，是否会成为新的全球性风险？",
+      "status": "unresolved"
+    },
+    {
+      "id": "ya-identity",
+      "question": "睚与其口中的祂究竟是什么存在关系？",
+      "status": "unresolved"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-honglu",
+      "title": "洪炉示岁",
+      "url": "https://prts.wiki/w/洪炉示岁",
+      "type": "activity"
+    },
+    {
+      "id": "src-who-is-real",
+      "title": "画中人",
+      "url": "https://prts.wiki/w/画中人",
+      "type": "activity"
+    },
+    {
+      "id": "src-invitation-to-wine",
+      "title": "将进酒",
+      "url": "https://prts.wiki/w/将进酒",
+      "type": "activity"
+    },
+    {
+      "id": "src-where-vernal-winds",
+      "title": "登临意",
+      "url": "https://prts.wiki/w/登临意",
+      "type": "activity"
+    },
+    {
+      "id": "src-here-a-people-sows",
+      "title": "怀黍离",
+      "url": "https://prts.wiki/w/怀黍离",
+      "type": "activity"
+    },
+    {
+      "id": "src-delicious-on-terra",
+      "title": "相见欢",
+      "url": "https://prts.wiki/w/相见欢",
+      "type": "activity"
+    },
+    {
+      "id": "src-garden",
+      "title": "岁的界园志异",
+      "url": "https://prts.wiki/w/岁的界园志异",
+      "type": "integrated-strategies"
+    },
+    {
+      "id": "src-garden-gallery",
+      "title": "岁的界园志异／见字图册",
+      "url": "https://prts.wiki/w/岁的界园志异/见字图册",
+      "type": "lore-index"
+    },
+    {
+      "id": "src-a-new-year",
+      "title": "辞岁行",
+      "url": "https://prts.wiki/w/辞岁行",
+      "type": "activity"
+    },
+    {
+      "id": "src-ta10",
+      "title": "TA-10 镇神头／END",
+      "url": "https://prts.wiki/w/TA-10_镇神头/END",
+      "type": "story-node"
+    },
+    {
+      "id": "src-ta11",
+      "title": "TA-11 长生劫／END",
+      "url": "https://prts.wiki/w/TA-11_长生劫/END",
+      "type": "story-node"
+    },
+    {
+      "id": "src-ta-st2",
+      "title": "TA-ST-2 史不失书",
+      "url": "https://prts.wiki/w/TA-ST-2_史不失书/NBT",
+      "type": "story-node"
+    },
+    {
+      "id": "src-chongyue",
+      "title": "重岳",
+      "url": "https://prts.wiki/w/重岳",
+      "type": "operator"
+    },
+    {
+      "id": "src-wang",
+      "title": "望",
+      "url": "https://prts.wiki/w/望",
+      "type": "operator"
+    },
+    {
+      "id": "src-reflections",
+      "title": "镜中集",
+      "url": "https://prts.wiki/w/镜中集",
+      "type": "vignette"
+    }
+  ]
+}
