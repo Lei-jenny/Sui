@@ -21,7 +21,11 @@ export default function Home() {
               <Link href="/archive" className="ghost-button">阅读全档案 <span aria-hidden="true">↗</span></Link>
             </div>
           </div>
-          <div className="hero-art" aria-hidden="true">
+          <div
+            className="hero-art"
+            style={{ backgroundImage: `url("${process.env.NEXT_PUBLIC_SITE_BASE_PATH ?? ""}/archive-orbit.svg")` }}
+            aria-hidden="true"
+          >
             <span className="art-code">FIG. 01 / YAN</span>
             <div className="art-seal"><span>歲</span></div>
             <span className="art-caption">十二代理人 · 岁陵卷宗</span>

@@ -26,6 +26,12 @@ npm start
 3. 选用 **Next.js** 框架预设和 **Node.js 22.x**，使用默认构建与输出设置。不需要数据库、API、环境变量或自定义输出目录。
 4. 点击 **Deploy**。构建会预渲染全部作品和人物详情页；更新资料后重新部署即可刷新页面。
 
+## 部署到 GitHub Pages
+
+在仓库的 **Settings → Pages → Build and deployment → Source** 选择 **GitHub Actions**。[部署工作流](.github/workflows/pages.yml)会在推送到 `main` 后构建并发布站点，也可以在 **Actions → Deploy Sui to GitHub Pages** 手动运行。不需要个人访问令牌或额外的仓库密钥。
+
+GitHub Pages 构建设置 `PAGES_EXPORT=true`，输出到 `out/`，并加上 `/Sui` 路径前缀。发布后的地址为 [lei-jenny.github.io/Sui/](https://lei-jenny.github.io/Sui/)。普通 Next.js 构建和 Vercel 部署不要设置此变量。
+
 ## 路由与资料
 
 | 路由 | 内容 |

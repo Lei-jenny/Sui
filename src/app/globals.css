@@ -112,7 +112,7 @@ button, select { cursor: pointer; }
   justify-self: end;
   display: grid;
   place-items: center;
-  background: url("/archive-orbit.svg") center / contain no-repeat;
+  background: center / contain no-repeat;
 }
 .art-code, .art-caption {
   position: absolute;
